@@ -11,7 +11,7 @@ button{
 .navbar_main{
     width: 100%; 
     height: 48px;
-    background-color: #232F3E;
+    background-color:#131921;
     display:flex;
     color:white;
     justify-content: space-around;
@@ -51,7 +51,7 @@ button{
 .nav-search{
     display:flex;
     width: 100%;
-    max-width: 850px; 
+    max-width: 950px; 
 }
 .search-select{
     border:none;
@@ -105,13 +105,17 @@ button{
     display:flex;
     width:40px;
 }
+.nav-signin{
+    display:flex;
+    flex-direction: column;
+}
 .menu-icon{
     width:1em;
 }
 .nav-secondary{
     display:flex;
     width:100%; 
-    background-color: #082626;
+    background-color:#232f3e;
     align-items:center;
     justify-content:space-around;
     color:white;
@@ -130,7 +134,7 @@ button{
     background-image: url("mainbg.jpg");
     background-size: cover;
     width:100%; 
-    height:530px;
+    height:480px;
     display:flex;
     align-items:flex-end;
     justify-content:center;
@@ -299,7 +303,7 @@ main{
     display:flex;
     flex-wrap:wrap;
     gap:20px 0px;
-    zoom: 0.7;
+    
 }
 .fc{
     width:100%; 
@@ -307,10 +311,14 @@ main{
     height:24%;
 }
 .fc a{
-    color:white;
+    color:rgba(255, 255, 255, 0.437);
     text-decoration:none;
     font-size: 10px;
     font-weight: lighter;
+}
+.fc strong{
+    color:white
+    
 }
 .pc{
     display:flex;
@@ -371,4 +379,85 @@ html{
 .btt a{
     color: white;
     text-decoration: none;
+}
+.dialogue-box{ 
+    width:240px;
+    height:500px;
+    background-color: rgb(241, 236, 236);
+    position: absolute;
+    top:40px;
+    z-index:5;
+    display:none;
+    color:black;
+}
+  .tail{
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-left-width: 0.5cm;
+    border-right-width: 0.5cm;
+    border-bottom: 0.866cm solid white;
+    position: absolute;
+    top: -15px;
+  }
+  .nav-ln{
+    position: relative;
+  }
+  .nav-ln:hover .dialogue-box,.nav-ln .dialogue-box:hover{
+         display:block;
+  }
+  .nav-signin:hover .dialogue-box1{
+    display:block;
+}
+.dmain{
+    position: absolute;
+    background-color: white;
+    width:100%;
+    height:100%;
+    z-index: 4;
+    padding-top:30px;
+    padding-left: 10px;
+}
+.dmain :first-child{
+    display:flex;
+    gap:20px;
+    margin-bottom:10px;
+}
+label{
+    display: flex;
+    gap:21px;
+}
+label input{
+    accent-color: orange;
+}
+.ccu{
+    display: flex;
+    gap:20px;
+    padding-top:3px;
+}
+.ccu1{
+    display:flex;
+    gap:20px;
+    padding-top:10px;
+    margin-bottom:8px;
+}
+.cc{
+    display: flex;
+    justify-content: center;
+    padding-top:5px
+}
+.bordermk{
+    height:25px;
+    border-top:2px solid rgba(128, 128, 128, 0.197);
+    margin-right:20px;
+}
+.dmain a{
+    color:blue;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+    margin-bottom:8px;
 }
