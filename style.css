@@ -7,7 +7,9 @@ button{
     background-color: transparent;
     color:white;
 }
-/* header*/
+/*                                                            Header                                                                      */
+
+    /*               Navbar Main                      */
 .navbar_main{
     width: 100%; 
     height: 48px;
@@ -86,6 +88,7 @@ button{
     border:none;
     color:white;
     font-weight:bold;
+    background-color:transparent;
 }
 .nav-ln{
     display:flex;
@@ -94,6 +97,7 @@ button{
 .al{
     border:none;
     color: white;
+    background-color: transparent;
 }
 .nav-cart{
     display:flex;
@@ -109,9 +113,7 @@ button{
     display:flex;
     flex-direction: column;
 }
-.menu-icon{
-    width:1em;
-}
+   /*                           Secondary Navbar                                    */
 .nav-secondary{
     display:flex;
     width:100%; 
@@ -119,9 +121,12 @@ button{
     align-items:center;
     justify-content:space-around;
     color:white;
-    height:38px;
-    padding:5px;
+    height:30px;
+    padding:3px;
     flex-wrap: wrap; 
+}
+.menu-icon{
+    width:20px;
 }
 .gstore{
     flex-grow:0.9;
@@ -129,7 +134,13 @@ button{
     justify-content: end;
     font-size:20px;
 }
-/* main*/
+.td{
+    font-size:20px;
+}
+/*                                                              main                                                                       */
+main{
+    background-color:#e2e7e6;
+}
 .main-ad{
     background-image: url("mainbg.jpg");
     background-size: cover;
@@ -141,9 +152,7 @@ button{
     mask-image: linear-gradient(to bottom, #000000 50%, transparent 100%);
     z-index: 1;
 }
-.td{
-    font-size:20px;
-}
+
 .head-li{
     background-color:rgb(255, 255, 255);
     color:black;
@@ -209,7 +218,7 @@ button{
     display:flex;
     overflow-x:auto;
 }
-/* footer*/
+/*                                                                footer                                                                  */
 .container{
     height: auto;
     width: 100%;
@@ -283,9 +292,7 @@ button{
     width:20px;
     height:17px;
 }
-main{
-    background-color:#e2e7e6;
-}
+ 
 .fmenu3{
     width:100%;
     height:auto; 
@@ -344,20 +351,7 @@ main{
     color:white;
     text-decoration:none;
 }
-.popup-div{
-    display:none;
-    position:absolute;
-    background-color: #2d65aa;
-    padding:20px;
-    border: 1px outset #ccc;
-    width:200px;
-    top:110%;
-    left:0;
-    border-radius: 5px;
-}
-.nav-ln:hover  .popup-div{
-    display:block;
-}
+<!-------------------------------------------------------Add_ons------------------------------------------------------------------------->
 select{
     background-color: transparent;
 }
@@ -406,9 +400,6 @@ html{
   .nav-ln:hover .dialogue-box,.nav-ln .dialogue-box:hover{
          display:block;
   }
-  .nav-signin:hover .dialogue-box1{
-    display:block;
-}
 .dmain{
     position: absolute;
     background-color: white;
